@@ -11,8 +11,8 @@ metadata:
     - tanzu
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
-    grafana/dashboard-selector: 'general'
-    grafana/alert-label-selector: 'type=http-requests'
+    grafana/dashboard-selector: 'kubernetes'
+    grafana/alert-label-selector: 'alertname=test-backstage-grafana'
 spec:
   type: service
   lifecycle: experimental
